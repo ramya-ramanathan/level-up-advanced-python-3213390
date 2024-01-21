@@ -1,10 +1,7 @@
 class Calculator:
-    def __init__(self,error_t1, error_t2, error_t3, error_t4) -> None:
+    def __init__(self,*args) -> None:
         self._types = []
-        self._types.append(error_t1)
-        self._types.append(error_t2)
-        self._types.append(error_t3)
-        self._types.append(error_t4)
+        self._types += args
         self.error = None
 
     def __enter__(self):
